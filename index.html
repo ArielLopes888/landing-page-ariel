@@ -22,30 +22,46 @@
           </a>
         </div>
         <div class="nav-list">
-            
-          <ul>
-              <li><a href="#hero" data-after="Home">Home</a></li>
-              <li><a href="#services" data-after="Service">Services</a></li>
-              <li><a href="#projects" data-after="Projects">Projects</a></li>
-              <li><a href="#about" data-after="About">About</a></li>
-              <li><a href="#contact" data-after="Contact">Contact</a></li>
-            </ul>
-      </div>
+          <ul id="nav-items">
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Serviços</a></li>
+            <li><a href="#projects" data-after="Projects">Projetos</a></li>
+            <li><a href="#about" data-after="About">Sobre</a></li>
+            <li><a href="#contact" data-after="Contact">Contato</a></li>
+          </ul>
+        </div>
+        
         <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
         <label class="close-menu-label" for="close-menu" title="close menu"></label>
+        
         <aside class="menu">
           <div class="main-content menu-content">
             <nav>
-              <ul onclick="getElementById('close-menu').checked = false;">
-                <li><a href="#hero" data-after="Home">Home</a></li>
-                <li><a href="#services" data-after="Service">Serviços</a></li>
-                <li><a href="#projects" data-after="Projects">Projetos Recentes</a></li>
-                <li><a href="#about" data-after="About">Sobre</a></li>
-                <li><a href="#contact" data-after="Contact">Contato</a></li>
+              <ul id="menu-items" onclick="document.getElementById('close-menu').checked = false;">
+
               </ul>
             </nav>
           </div>
         </aside>
+        
+        <script>
+        
+          const navItems = document.getElementById('nav-items').cloneNode(true);
+          const menuItems = document.getElementById('menu-items');
+          
+
+          const itemTexts = ['Home', 'Serviços', 'Projetos Recentes', 'Sobre', 'Contato'];
+          const listItems = navItems.getElementsByTagName('li');
+        
+          for (let i = 0; i < listItems.length; i++) {
+            const link = listItems[i].getElementsByTagName('a')[0];
+            link.textContent = itemTexts[i];
+          }
+        
+          menuItems.appendChild(navItems);
+        </script>
+        
+        
       </div>
     </div>
 
@@ -63,7 +79,8 @@
 
 
 
-        <a href="#projects" type="button" class="cta">Orçamento Grátis</a>
+        <a href="https://wa.me/5579988381834?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." type="button" class="cta">Orçamento Grátis</a>
+
       </div>
     </div>
   </section>
@@ -108,49 +125,49 @@
   <section id="projects">
     <div class="projects container">
       <div class="projects-header">
-        <h1 class="section-title">Projetos <span>Recentes</span></h1>
+        <h1 class="section-title">Alguns <span>Projetos</span></h1>
       </div>
       <div class="all-projects">
         <div class="project-item">
           <div class="project-info">
 
-            <h2>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
-            <p>xxx
+            <h2>Escritório de Advocacia</h2>
+            <p>
             </p>
-            <a href="/">view website</a>
+            <a href="https://wa.me/5579988381834?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." type="button" class="cta">Orçamento Grátis</a>
           </div>
           <div class="project-img">
-            <img src="" alt="img">
+            <img src="assets/img/adv.png" alt="img">
           </div>
         </div>
 
         <div class="project-item">
           <div class="project-info">
 
-            <h2>X</h2>
-            <p>xxxx
+            <h2>Higienização de Estofados</h2>
+            <p>
             </p>
-            <a href="/">view website</a>
+            <a href="https://wa.me/5579988381834?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." type="button" class="cta">Orçamento Grátis</a>
           </div>
           <div class="project-img">
-            <img src="" alt="img">
+            <img src="assets/img/novodenovo.png" alt="img">
           </div>
         </div>
 
         <div class="project-item">
           <div class="project-info">
 
-            <h2>X</h2>
-            <p>xxx</p>
+            <h2>Porcelanatos</h2>
+            <p></p>
             <br>
-            <a href="">view website</a>
+            <a href="https://wa.me/5579988381834?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." type="button" class="cta">Orçamento Grátis</a>
           </div>
           <div class="project-img">
-            <img src="" alt="img">
+            <img src="assets/img/CDE.png" alt="img">
           </div>
         </div>
 
-        <div class="project-item">
+        <!-- <div class="project-item">
           <div class="project-info">
 
             <h2>X</h2>
@@ -172,7 +189,7 @@
           <div class="project-img">
             <a href="#"> <img src="./img/about-image.png" alt="img"></a>
           </div>
-        </div>
+        </div> -->
 
 
       </div>
@@ -200,7 +217,7 @@
 
           Com minha experiência em negócios de todo tamanho e em diversos nichos, sou a melhor escolha para o seu
           negócio vender mais através da Internet.</p>
-        <a href="resume.html" class="cta">Orçamento Grátis</a>
+        <a href="https://wa.me/5579988381834?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." class="cta">Orçamento Grátis</a>
       </div>
     </div>
   </section>
